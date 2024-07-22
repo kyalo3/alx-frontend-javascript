@@ -1,11 +1,13 @@
 module.exports = {
   env: {
-    browser: false,
+    browser: true,
     es6: true,
     jest: true,
   },
   extends: [
     'airbnb-base',
+    'eslint:recommended',
+    'plugin:jest/recommended',
     'plugin:jest/all',
   ],
   globals: {
@@ -13,7 +15,7 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   plugins: ['jest'],
